@@ -26,7 +26,7 @@ img[src$=".svg"] {
     color: rgb(70, 165, 233);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 20px;
     padding: 10px 30px;
     align-items: center;
 }
@@ -142,8 +142,124 @@ ul li {
 }
 
 
-
 .main-content {
     grid-area: 2/2/3/3;
-    background-color: orange;
+    background-color: rgb(217, 217, 217);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.project-data {
+    padding: 20px;
+}
+
+.project-data h2 {
+    font-size: 2rem;
+    color: rgb(70, 165, 233);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    height: 200px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: white;
+    padding: 20px 15px;
+    border-left: 7px solid rgb(255, 136, 0);
+    box-shadow: 3px 3px 6px 3px rgb(198, 198, 198);
+}
+
+.project h3 {
+    font-size: 1.rem;
+    padding-bottom: 10px;
+}
+
+.project .project-icons {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.main-sidebar {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr 4fr);
+    gap: 5px;
+}
+
+.main-sidebar h3 {
+    font-size: 1.5rem;
+    align-self: flex-end;
+}
+
+.main-sidebar>div {
+    max-width: 80%;
+    max-height: fit-content;
+    margin-top: 20px;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 3px 3px 6px 3px rgb(198, 198, 198);
+    max-height: 90%;
+    padding: 15px;
+}
+
+.announcement-card,
+.trending-card {
+    display: grid;
+    gap: 5px;
+    align-content: space-evenly;
+    justify-items: center;
+}
+
+.announcement,
+.trending {
+    max-width: 80%;
+}
+
+.announcement h4 {
+    font-size: 0.85rem;
+}
+
+.announcement p {
+    font-size: 0.75rem;
+    color: rgb(82, 82, 82);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.announcement:nth-child(1),
+.announcement:nth-child(2) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+.trending {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.trending img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.trending-name p:nth-child(1) {
+    font-size: 1rem;
+}
+
+.trending-name p:nth-child(2) {
+    font-size: 0.9rem;
+    color: rgb(82, 82, 82);
 }
